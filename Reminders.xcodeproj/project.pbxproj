@@ -21,6 +21,8 @@
 		C8EA60D22799C4AB002E0B93 /* TaskStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EA60D02799C4AB002E0B93 /* TaskStore.swift */; };
 		C8EA60D42799CCE3002E0B93 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EA60D32799CCE3002E0B93 /* TaskCell.swift */; };
 		C8EA60D52799CCE3002E0B93 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EA60D32799CCE3002E0B93 /* TaskCell.swift */; };
+		C8EA60D72799D0F5002E0B93 /* AddTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EA60D62799D0F5002E0B93 /* AddTask.swift */; };
+		C8EA60D82799D0F5002E0B93 /* AddTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EA60D62799D0F5002E0B93 /* AddTask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,7 @@
 		C8EA60CD2799C48C002E0B93 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		C8EA60D02799C4AB002E0B93 /* TaskStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStore.swift; sourceTree = "<group>"; };
 		C8EA60D32799CCE3002E0B93 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		C8EA60D62799D0F5002E0B93 /* AddTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,7 @@
 			children = (
 				C8EA60A02799C246002E0B93 /* ContentView.swift */,
 				C8EA60D32799CCE3002E0B93 /* TaskCell.swift */,
+				C8EA60D62799D0F5002E0B93 /* AddTask.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -221,6 +225,7 @@
 				C8EA60CE2799C48C002E0B93 /* Task.swift in Sources */,
 				C8EA60B12799C24B002E0B93 /* ContentView.swift in Sources */,
 				C8EA60D42799CCE3002E0B93 /* TaskCell.swift in Sources */,
+				C8EA60D72799D0F5002E0B93 /* AddTask.swift in Sources */,
 				C8EA60AF2799C24B002E0B93 /* RemindersApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,6 +239,7 @@
 				C8EA60B22799C24B002E0B93 /* ContentView.swift in Sources */,
 				C8EA60C92799C464002E0B93 /* TaskPriority.swift in Sources */,
 				C8EA60D52799CCE3002E0B93 /* TaskCell.swift in Sources */,
+				C8EA60D82799D0F5002E0B93 /* AddTask.swift in Sources */,
 				C8EA60B02799C24B002E0B93 /* RemindersApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
