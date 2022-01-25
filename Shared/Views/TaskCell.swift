@@ -11,6 +11,9 @@ struct TaskCell: View {
     
     @ObservedObject var task: Task
     
+    // A dervied value connected to a boolean on ContentView
+    @Binding var triggerListUpdate: Bool
+    
     var taskColor: Color {
         switch task.priority {
         case .high:
@@ -26,9 +29,19 @@ struct TaskCell: View {
         HStack {
             Image(systemName: task.completed ? "checkmark.circle.fill" : "circle")
                 .onTapGesture {
-                    
+                    // Toggle task completion status... this means:
+                    //
+                    // Complete the task(if it was previously incomplete)
+                    //or
+                    //Mark task incomplete (if it was previously completed)
                     task.completed.toggle()
                     
+                    // Change state of the source of truth on ContentView
+                    // This will cause SwiftUi to re-draw he view and it will
+                    // reflect fact that this task was completed
+                    withAnimation {
+                        triggerListUpdate.toggle()
+                    }
                 }
             
             Text(task.description)
@@ -39,7 +52,7 @@ struct TaskCell: View {
 
 struct TaskCell_Previews: PreviewProvider {
     static var previews: some View {
-        TaskCell(task: testData[0])
-        TaskCell(task: testData[1])
+        TaskCell(task: testData[0], triggerListUpdate: .constant(true))
+        TaskCell(task: testData[1], triggerListUpdate: .constant(true))
     }
 }
