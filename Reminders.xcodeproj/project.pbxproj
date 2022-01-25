@@ -110,7 +110,6 @@
 			children = (
 				C8EA60C72799C464002E0B93 /* TaskPriority.swift */,
 				C8EA60CD2799C48C002E0B93 /* Task.swift */,
-				C8EA60D02799C4AB002E0B93 /* TaskStore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -118,6 +117,7 @@
 		C8EA60BF2799C289002E0B93 /* View Model */ = {
 			isa = PBXGroup;
 			children = (
+				C8EA60D02799C4AB002E0B93 /* TaskStore.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
