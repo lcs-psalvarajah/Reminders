@@ -22,7 +22,19 @@ struct ContentView: View {
         
         List {
             ForEach(store.tasks) { task in
-                TaskCell(task: task)
+                // dont have to put == true since showingCompletedTasks is a boolean
+                if showingCompletedTasks {
+                    // show all tasks, completed or incomplete
+                    TaskCell(task: task)
+                } else {
+                    
+                    // Only show incompleted tasks
+                    if task.completed == false {
+                        TaskCell(task: task)
+                    }
+
+                }
+           
             }
             
             // View modifier invokes the function on the view model, "store"
