@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		C86663A127A22D2800E5779C /* VisibleTaskPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86663A027A22D2800E5779C /* VisibleTaskPriority.swift */; };
 		C86663A227A22D2800E5779C /* VisibleTaskPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86663A027A22D2800E5779C /* VisibleTaskPriority.swift */; };
+		C86663A527A250C600E5779C /* SharedFunctionsAndConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86663A427A250C600E5779C /* SharedFunctionsAndConstants.swift */; };
+		C86663A627A250C600E5779C /* SharedFunctionsAndConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86663A427A250C600E5779C /* SharedFunctionsAndConstants.swift */; };
 		C8EA60AF2799C24B002E0B93 /* RemindersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EA609F2799C246002E0B93 /* RemindersApp.swift */; };
 		C8EA60B02799C24B002E0B93 /* RemindersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EA609F2799C246002E0B93 /* RemindersApp.swift */; };
 		C8EA60B12799C24B002E0B93 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EA60A02799C246002E0B93 /* ContentView.swift */; };
@@ -29,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		C86663A027A22D2800E5779C /* VisibleTaskPriority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisibleTaskPriority.swift; sourceTree = "<group>"; };
+		C86663A427A250C600E5779C /* SharedFunctionsAndConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedFunctionsAndConstants.swift; sourceTree = "<group>"; };
 		C8EA609F2799C246002E0B93 /* RemindersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersApp.swift; sourceTree = "<group>"; };
 		C8EA60A02799C246002E0B93 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C8EA60A12799C24B002E0B93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,6 +63,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C86663A327A2509800E5779C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C86663A427A250C600E5779C /* SharedFunctionsAndConstants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		C8EA60992799C245002E0B93 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				C8EA609F2799C246002E0B93 /* RemindersApp.swift */,
+				C86663A327A2509800E5779C /* Helpers */,
 				C8EA60BE2799C285002E0B93 /* Model */,
 				C8EA60BF2799C289002E0B93 /* View Model */,
 				C8EA60BD2799C280002E0B93 /* Views */,
@@ -224,6 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C86663A527A250C600E5779C /* SharedFunctionsAndConstants.swift in Sources */,
 				C8EA60D12799C4AB002E0B93 /* TaskStore.swift in Sources */,
 				C8EA60C82799C464002E0B93 /* TaskPriority.swift in Sources */,
 				C8EA60CE2799C48C002E0B93 /* Task.swift in Sources */,
@@ -239,6 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C86663A627A250C600E5779C /* SharedFunctionsAndConstants.swift in Sources */,
 				C8EA60D22799C4AB002E0B93 /* TaskStore.swift in Sources */,
 				C8EA60CF2799C48C002E0B93 /* Task.swift in Sources */,
 				C8EA60B22799C24B002E0B93 /* ContentView.swift in Sources */,
