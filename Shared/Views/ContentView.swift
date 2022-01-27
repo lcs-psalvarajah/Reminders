@@ -56,16 +56,34 @@ struct ContentView: View {
             
             List {
                 ForEach(store.tasks) { task in
+                    
                     // dont have to put == true since showingCompletedTasks is a boolean
                     if showingCompletedTasks {
-                        // show all tasks, completed or incomplete
-                        //Because we want all the tasks to show we will not hoock up the source of truth triggerListUpdate to taskcell
-                        TaskCell(task: task, triggerListUpdate: .constant(true))
+                        
+                        if selectedPriorityForVisibleTasks == .all {
+                            //show all tasks, all priorities
+                            TaskCell(task: task, triggerListUpdate: .constant(true))
+                        } else {
+                            
+                            //Only show tasks of the selected priority
+                            //Althrough "priority" and "selectedPriorityForVisibleTasks" are different data
+                            // types (different enumerations) this works because we are comparing their
+                            // raw values, which are both of type String
+                            if task.priority.rawValue == selectedPriorityForVisibleTasks.rawValue {
+                                TaskCell(task: task, triggerListUpdate: .constant(true))
+                            }
+                        }
+                        
                     } else {
                         
                         // Only show incompleted tasks
                         if task.completed == false {
-                            TaskCell(task: task, triggerListUpdate: $listShouldUpdate)
+                            
+                            if selectedPriorityForVisibleTasks == .all {
+                                // show all completed tasks, only for selected priority level
+                                TaskCell(task: task, triggerListUpdate: $listShouldUpdate)
+                                
+                            }
                         }
                         
                     }
@@ -100,7 +118,7 @@ struct ContentView: View {
             }
             .sheet(isPresented: $showingAddTask) {
                 AddTask(store: store, showing: $showingAddTask)
-        }
+            }
         }
     }
 }
