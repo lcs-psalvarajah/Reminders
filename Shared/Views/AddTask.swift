@@ -29,7 +29,7 @@ struct AddTask: View {
                         Text(TaskPriority.low.rawValue).tag(TaskPriority.low)
                         Text(TaskPriority.medium.rawValue).tag(TaskPriority.medium)
                         Text(TaskPriority.high.rawValue).tag(TaskPriority.high)
-
+                        
                     }
                     .pickerStyle(SegmentedPickerStyle())
                 }
@@ -58,7 +58,7 @@ struct AddTask: View {
                 }
             }
         }
-
+        
         //Prevents dismissal of the sheet by swiping down
         // If sheet is dismissed this way, data is not saved
         // Better that the user needs to press save button or cancel button

@@ -18,7 +18,7 @@ class TaskStore: ObservableObject {
     
     // MARK: Functions
     func deleteItems(at offsets: IndexSet) {
-        // "offsets" contain a set of items elescted for deletion
+        // "offsets" contain a set of items selected for deletion
         // The set is then passed to the built-in "remove" method on
         // the "tasks" array which handles removal from the array
         tasks.remove(atOffsets: offsets)
