@@ -24,7 +24,7 @@ class TaskStore: ObservableObject {
             // Load the raw data
             let data = try Data(contentsOf: filename)
             
-            //What as loaded from the file?
+            //What was loaded from the file?
             print("Got data from the file, contents are:")
             print(String(data: data, encoding: .utf8)!)
             
